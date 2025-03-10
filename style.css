@@ -226,6 +226,7 @@ body {
                 display: flex;
                 flex: 1 1 auto;
                 height: 100%;
+                width: 100%;
             }
         }
         .CorpoAba.ativo {
