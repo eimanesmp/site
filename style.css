@@ -165,53 +165,9 @@ body {
         
         #BarraLateralConteudo {
             padding: 12px;
-
-            #BarraLateralUsuario {
-                display: flex;
-                align-items: center;
-                gap: 0px;
-                margin-bottom: 24px;
-                transition-duration: 0.4s;
-                justify-content: center;
-    
-                #BarraLateralAvatar {
-                    width: 50px;
-                    height: 50px;
-                    object-fit: cover;
-                    border-radius: 100%;
-                }
-    
-                #BarraLateralUsuarioInfo {
-                    display: flex;
-                    flex-direction: column;
-    
-                    span:last-child {
-                        color: #6b6b6b;
-                        font-size: 12px;
-                    }
-                }
-            }
-
-            #BotaoBarraLateralAbrir {
-                position: absolute;
-                top: 23px;
-                right: -10px;
-                background-color: var(--cor-secundaria);
-                color: var(--cor-branca);
-                padding: 5px;
-                border-radius: 999px;
-                transition-duration: 0.4s;
-                border: none;
-                cursor: pointer;
-
-                i {
-                    transition: transform .3s ease;
-                }
-            }
-            #BotaoBarraLateralAbrir:hover {
-                background-color: var(--cor-principal);
-            }
-
+            display: flex;
+            flex: 1;
+            justify-content: center;
         }
 
         .BarraLateralItemDescricao {
