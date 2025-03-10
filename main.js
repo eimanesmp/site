@@ -1,14 +1,3 @@
-// Abrir aba
-document.getElementById('BotaoBarraLateralAbrir').addEventListener('click', () => {
-    document.getElementById('BarraLateral').classList.toggle('aberta')
-});
-document.getElementById('BarraLateral').addEventListener('mouseenter', () => {
-    document.getElementById('BarraLateral').classList.add('aberta')
-});
-document.getElementById('BarraLateral').addEventListener('mouseleave', () => {
-    document.getElementById('BarraLateral').classList.remove('aberta')
-});
-
 // Selecionar uma aba
 const Abas = Array.from(document.getElementsByClassName('BarraLateralItem')).filter(aba => aba.onclick == null);
 const CorpoAbas = Array.from(document.getElementsByClassName('CorpoAba'));
