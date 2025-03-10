@@ -232,7 +232,7 @@ body {
             display: none;
             flex: 1;
 
-            object {
+            object, embed {
                 display: flex;
                 flex: 1 1 auto;
                 height: 100%;
