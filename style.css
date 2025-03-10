@@ -293,9 +293,8 @@ body {
         }
 
         .CorpoAba {
-            display: flex;
+            display: none;
             flex: 1;
-            visibility: hidden;
 
             object {
                 display: flex;
@@ -304,7 +303,7 @@ body {
             }
         }
         .CorpoAba.ativo {
-            visibility: visible;
+            display: flex;
         }
 
     }
