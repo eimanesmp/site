@@ -29,7 +29,7 @@ if(AbaPadrao) {
     aba.classList.add('ativo');
     CorpoAbas.find(caba => caba.id.replace("Corpo","Lateral") == aba.children.namedItem('span').id).classList.add('ativo');
 } else {
-    let aba = Abas.find(aba => aba.children.namedItem('span').id == "LateralAbaInicio");
+    let aba = Abas.find(aba => aba.children.namedItem('span').id == "LateralAbainicio");
     aba.classList.add('ativo');
     CorpoAbas.find(caba => caba.id.replace("Corpo","Lateral") == aba.children.namedItem('span').id).classList.add('ativo');
 }
