@@ -8,7 +8,7 @@
     --cor-principal: #323030;
     --cor-secundaria: #706e6e;
     --cor-esbranquiçada: #f4ebdf;
-    --cor-branca: #fff9ef;
+    --cor-branca:rgb(255, 255, 255);
     --cor-de-fundo: var(--cor-esbranquiçada);
     --botao-primario: var(--cor-principal);
     --botao-secundario: #00000000;
