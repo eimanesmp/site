@@ -245,6 +245,7 @@ body {
 
         #CorpoAbaInicio {
             flex-direction: column;
+            margin: 10px;
         }
 
     }
