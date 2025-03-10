@@ -284,7 +284,7 @@ body {
 
     /*Corpo*/
     main {
-        margin: 10px 10px 10px 102px;
+        margin-left: 102px;
         display: flex;
         flex: 1;
         
