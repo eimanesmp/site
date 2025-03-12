@@ -231,6 +231,7 @@ body {
         .CorpoAba {
             display: none;
             flex: 1;
+            overflow: hidden;
 
             object, embed {
                 display: flex;
