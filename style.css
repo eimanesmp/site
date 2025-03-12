@@ -231,7 +231,6 @@ body {
         .CorpoAba {
             display: none;
             flex: 1;
-            overflow: hidden;
 
             object, embed {
                 display: flex;
@@ -251,44 +250,63 @@ body {
 
         #CorpoAbacoordenadas {
             margin: 10px;
-            justify-content: center;
+            gap: 10px;
+            align-items: center;
+            flex-direction: column;
             
             div {
                 display: flex;
+                flex-direction: column;
+                height: 100%;
                 gap: 10px;
-                height: fit-content;
 
-                .CoordenadasElemento {
-                    background-color: var(--cor-esbranquiçada);
-                    padding: 10px;
-                    border-radius: 10px;
-                    user-select: text;
+                #DivSuperiorCoordenadas {
                     display: flex;
-                    flex-direction: column;
-                    gap: 8px;
-                    height: unset;
+                    gap: 10px;
+                    height: fit-content;
+                    flex-direction: row;
     
-                    input {
-                        border: none;
-                        border-radius: 5px;
-                        padding: 5px;
-                        transition-duration: 0.4s;
+                    .CoordenadasElemento {
+                        background-color: var(--cor-esbranquiçada);
+                        padding: 10px;
+                        border-radius: 10px;
+                        user-select: text;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 8px;
+                        height: unset;
+        
+                        input {
+                            border: none;
+                            border-radius: 5px;
+                            padding: 5px;
+                            transition-duration: 0.4s;
+                        }
+                        input:hover {
+                            box-shadow: 0px 0px 0px 2px var(--cor-principal) inset;
+                        }
+                        input[type="submit"] {
+                            background-color: var(--cor-principal);
+                            color: var(--cor-esbranquiçada);
+                            box-shadow: none;
+                            padding: 8px;
+                            
+                        }
+                        input[type="submit"]:hover {
+                            background-color: var(--cor-escura);
+                            cursor: pointer;
+                        }
+                    } 
+                }
+    
+                #DivInferiorCoordenadas {
+                    height: 100%;
+                    width: 100%;
+    
+                    object {
+                        border-radius: 10px;
                     }
-                    input:hover {
-                        box-shadow: 0px 0px 0px 2px var(--cor-principal) inset;
-                    }
-                    input[type="submit"] {
-                        background-color: var(--cor-principal);
-                        color: var(--cor-esbranquiçada);
-                        box-shadow: none;
-                        padding: 8px;
-                        
-                    }
-                    input[type="submit"]:hover {
-                        background-color: var(--cor-escura);
-                        cursor: pointer;
-                    }
-                } 
+                }
             }
         }
 
