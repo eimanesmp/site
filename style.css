@@ -265,6 +265,7 @@ body {
                     gap: 10px;
                     height: fit-content;
                     flex-direction: row;
+                    overflow-wrap: anywhere;
     
                     .CoordenadasElemento {
                         background-color: var(--cor-esbranquiçada);
