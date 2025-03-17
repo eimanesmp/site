@@ -1,5 +1,5 @@
 // Selecionar uma aba
-const Abas = Array.from(document.getElementsByClassName('BarraLateralItem')).filter(aba => aba.onclick == null);
+const Abas = Array.from(document.getElementsByClassName('BarraLateralItem')).filter(aba => aba.onclick == null && aba.id != "AbaIdMapa");
 const CorpoAbas = Array.from(document.getElementsByClassName('CorpoAba'));
 Abas.forEach(aba => {
     aba.addEventListener('click', () => {
@@ -29,7 +29,7 @@ if(AbaPadrao) {
     aba.classList.add('ativo');
     CorpoAbas.find(caba => caba.id.replace("Corpo","Lateral") == aba.children.namedItem('span').id).classList.add('ativo');
 } else {
-    let aba = Abas.find(aba => aba.children.namedItem('span').id == "LateralAbainicio");
+    let aba = Abas.find(aba => aba.children.namedItem('span').id == "LateralAbainicio" && aba.id != "AbaIdMapa");
     aba.classList.add('ativo');
     CorpoAbas.find(caba => caba.id.replace("Corpo","Lateral") == aba.children.namedItem('span').id).classList.add('ativo');
 }
