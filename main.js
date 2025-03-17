@@ -33,3 +33,7 @@ if(AbaPadrao) {
     aba.classList.add('ativo');
     CorpoAbas.find(caba => caba.id.replace("Corpo","Lateral") == aba.children.namedItem('span').id).classList.add('ativo');
 }
+
+if(window.location.hash == "#mapa") {
+    window.open('http://mapa.eimanesmp.shop:11004','_self');
+}
