@@ -35,5 +35,5 @@ if(AbaPadrao) {
 }
 
 if(window.location.hash == "#mapa") {
-    window.open('http://mapa.eimanesmp.shop:11004','_self');
+    window.location = 'http://mapa.eimanesmp.shop:11004';
 }
