@@ -293,7 +293,7 @@ body {
                         }
                         input[type="submit"] {
                             background-color: var(--cor-principal);
-                            color: var(--cor-esbranquiçada);
+                            color: var(--cor-branca);
                             box-shadow: none;
                             padding: 8px;
                             
