@@ -41,7 +41,7 @@ body {
     flex-direction: column;
     background-color: var(--cor-branca);
 
-    /*Barra lateral*/
+    /*Barra superior*/
     .Menu {
         background-color: var(--cor-offwhite);
         font-family: var(--fonte-principal);
