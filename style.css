@@ -16,6 +16,7 @@
     --cor-principal: #4F5A63;
     --cor-secundaria: #8A9197;
     --cor-esbranquiçada: #C5C8CB;
+    --cor-offwhite: #f9fafa;
     --cor-branca: #FFFFFF;
     --cor-de-fundo: var(--cor-esbranquiçada);
     --botao-primario: var(--cor-principal);
@@ -41,8 +42,8 @@ body {
     background-color: var(--cor-branca);
 
     /*Barra lateral*/
-    .BarraLateral {
-        background-color: var(--cor-esbranquiçada);
+    .Menu {
+        background-color: var(--cor-offwhite);
         font-family: var(--fonte-principal);
         display: flex;
         flex-direction: row;
@@ -52,13 +53,13 @@ body {
         position: relative;
         transition: all .5s;
 
-        .BarraLateralItens {
+        .MenuItens {
             display: flex;
             flex-direction: row;
             gap: 4px;
             justify-content: center;
 
-            .BarraLateralItem {
+            .MenuItem {
                 padding: 10px;
                 border-radius: 8px;
                 transition-duration: 0.4s;
@@ -85,28 +86,28 @@ body {
                 }
 
             }
-            .BarraLateralItem.ativo {
+            .MenuItem.ativo {
                 background-color: var(--cor-principal);
                 color: var(--cor-branca);
             }
-            .BarraLateralItem:hover {
+            .MenuItem:hover {
                 background-color: var(--cor-principal);
                 color: var(--cor-branca);
             }
-            .BarraLateralItem.ativo:hover {
+            .MenuItem.ativo:hover {
                 background-color: var(--cor-escura);
                 color: var(--cor-branca);
             }
         }
         
-        #BarraLateralConteudo {
+        #MenuConteudo {
             padding: 12px;
             display: flex;
             flex: 1;
             justify-content: center;
         }
 
-        .BarraLateralItemDescricao {
+        .MenuItemDescricao {
             width: 0px;
             overflow: hidden;
             white-space: nowrap;
@@ -120,10 +121,10 @@ body {
             }
         }
 
-        #BarraLateralLogout {
+        #MenuLogout {
             padding: 12px;
 
-            .BarraLateralItem {
+            .MenuItem {
                 padding: 10px;
                 border-radius: 8px;
                 transition-duration: 0.4s;
@@ -134,15 +135,15 @@ body {
                 font-size: 16px;
                 font-family: var(--fonte-principal);
             }
-            .BarraLateralItem.ativo {
+            .MenuItem.ativo {
                 background-color: var(--cor-principal);
                 color: var(--cor-branca);
             }
-            .BarraLateralItem:hover {
+            .MenuItem:hover {
                 background-color: var(--cor-principal);
                 color: var(--cor-branca);
             }
-            .BarraLateralItem.ativo:hover {
+            .MenuItem.ativo:hover {
                 background-color: var(--cor-escura);
                 color: var(--cor-branca);
             }
